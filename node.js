@@ -7,7 +7,6 @@ module.exports.cryptographic = true
 function random () {
   var buf = crypto
     .randomBytes(4)
-    .toString('hex')
 
-  return parseInt(buf, 16) / max
+  return buf.readUInt32BE(0) / max
 }
