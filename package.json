@@ -1,6 +1,6 @@
 {
   "name": "math-random",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a drop-in replacement for Math.random that uses cryptographically secure random number generation, where available",
   "main": "node.js",
   "browser": "browser.js",
