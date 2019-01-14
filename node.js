@@ -1,5 +1,5 @@
 var crypto = require('crypto')
-var max = Math.pow(2, 32)
+var max = 0xFFFFFFFF
 
 module.exports = random
 module.exports.cryptographic = true

@@ -6,7 +6,7 @@ module.exports = (function (global) {
   if (!good) return Math.random
 
   var arr = new Uint32Array(1)
-  var max = Math.pow(2, 32)
+  var max = 0xFFFFFFFF
   function random () {
     crypto.getRandomValues(arr)
     return arr[0] / max

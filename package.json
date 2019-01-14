@@ -1,6 +1,6 @@
 {
   "name": "math-random",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a drop-in replacement for Math.random that uses cryptographically secure random number generation, where available",
   "main": "node.js",
   "browser": "browser.js",
@@ -23,6 +23,10 @@
     "crypto.getRandomValues"
   ],
   "author": "Michael Rhodes",
+  "contributors": [
+    "Michael Rhodes",
+    "Robert Manolea <manolea.robert@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/michaelrhodes/math-random/issues"
