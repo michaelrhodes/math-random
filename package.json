@@ -3,17 +3,14 @@
   "author": "Michael Rhodes",
   "version": "1.0.3",
   "main": "node.js",
-  "browser": {
-    "node.js": "browser.js",
-    "assert": "console.assert"
-  },
+  "browser": "browser.js",
   "repository": "github:michaelrhodes/math-random",
   "license": "MIT",
   "scripts": {
-    "test": "node test.js"
+    "test": "dexy test.js"
   },
   "devDependencies": {
     "array-unique": "~0.2.1",
-    "console.assert": "github:michaelrhodes/console.assert#1.0.0"
+    "dexy": "github:michaelrhodes/dexy#1.0.1"
   }
 }

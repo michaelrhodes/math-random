@@ -1,4 +1,4 @@
-var assert = require('assert')
+var assert = console.assert
 var unique = require('array-unique')
 var random = require('./')
 
