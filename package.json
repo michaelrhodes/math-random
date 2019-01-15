@@ -1,7 +1,7 @@
 {
   "name": "math-random",
   "author": "Michael Rhodes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "node.js",
   "browser": "browser.js",
   "repository": "github:michaelrhodes/math-random",
