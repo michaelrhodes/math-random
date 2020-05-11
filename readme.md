@@ -1,6 +1,6 @@
 # math-random
 
-math-random is an drop-in replacement for Math.random that uses cryptographically secure random number generation, where available. It works in both browser and node environments.
+math-random is a drop-in replacement for Math.random that uses cryptographically secure random number generation, where available. It works in both browser and node environments.
 
 [![Build status](https://travis-ci.org/michaelrhodes/math-random.svg?branch=master)](https://travis-ci.org/michaelrhodes/math-random)
 
