@@ -1,26 +1,22 @@
 # math-random
 
-math-random is an drop-in replacement for Math.random that uses cryptographically secure random number generation, where available. It works in both browser and node environments.
+math-random is an isomorphic, drop-in replacement for `Math.random` that uses cryptographically secure random number generation, where available
 
-[![Build status](https://travis-ci.org/michaelrhodes/math-random.svg?branch=master)](https://travis-ci.org/michaelrhodes/math-random)
+[![ci](https://travis-ci.org/michaelrhodes/math-random.svg?branch=master)](https://travis-ci.org/michaelrhodes/math-random)
 
-## Install
-
+## install
 ```sh
 npm install math-random
 ```
 
-### Usage
-
+### use
 ```js
-var random = require('math-random')
-
-console.log(random())
+console.log(require('math-random')())
 => 0.584293719381094
 
-console.log(random.cryptographic)
-=> true || undefined
+console.log(require('math-random/is-secure'))
+=> true || false
 ```
 
-### License
-[MIT](http://opensource.org/licenses/MIT)
+### obey
+[CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/)

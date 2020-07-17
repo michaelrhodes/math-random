@@ -1,21 +1,29 @@
-var assert = console.assert
-var unique = require('array-unique')
 var random = require('./')
-
+var unique = require('array-unique')
 var iterations = 10000
-var number, cache = []
+var n, cache = []
 
 for (var i = 0; i < iterations; i++) {
-  number = random()
-  if (number < 0) {
-    assert(false, 'Random numbers should be greater than or equal to zero')
+  n = random()
+  if (typeof n !== 'number') {
+    fail('Random numbers should be numbers')
     break
   }
-  if (number >= 1) {
-    assert(false, 'Random numbers should be less than one')
+  if (n < 0) {
+    fail('Random numbers should be greater than or equal to zero')
     break
   }
-  cache.push(number)
+  if (n >= 1) {
+    fail('Random numbers should be less than one')
+    break
+  }
+  cache.push(n)
 }
 
-assert(unique(cache).length === iterations, 'Random numbers should be unique')
+if (unique(cache).length !== iterations) {
+  fail('Random numbers should be unique')
+}
+
+function fail (msg) {
+  console.assert(false, msg)
+}

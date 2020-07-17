@@ -2,15 +2,18 @@
   "name": "math-random",
   "author": "Michael Rhodes",
   "version": "1.0.4",
-  "main": "node.js",
-  "browser": "browser.js",
-  "repository": "github:michaelrhodes/math-random",
-  "license": "MIT",
-  "scripts": {
-    "test": "dexy test.js"
+  "main": "node",
+  "browser": {
+    "./node": "./browser/index",
+    "./crypto": "./browser/crypto"
   },
+  "repository": "github:michaelrhodes/math-random",
+  "license": "CC0-1.0",
   "devDependencies": {
     "array-unique": "~0.2.1",
-    "dexy": "github:michaelrhodes/dexy#1.0.1"
+    "dexy": "github:michaelrhodes/dexy#1.0.4"
+  },
+  "scripts": {
+    "test": "dexy test"
   }
 }
