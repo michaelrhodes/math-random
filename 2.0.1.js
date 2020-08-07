@@ -1,0 +1,1 @@
+!function(n){"module"in this?module.exports=n():mathRandom=n()}(function(){var n="undefined"!=typeof window?window:self;return function(n){if(!n)return Math.random;var t=Math.pow(2,32),o=new Uint32Array(1);return function(){return n.getRandomValues(o)[0]/t}}(n.crypto||n.msCrypto)});
