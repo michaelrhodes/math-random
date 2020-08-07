@@ -1,5 +1,4 @@
 var random = require('./')
-var unique = require('array-unique')
 var iterations = 10000
 var n, cache = []
 
@@ -20,7 +19,7 @@ for (var i = 0; i < iterations; i++) {
   cache.push(n)
 }
 
-if (unique(cache).length !== iterations) {
+if (new Set(cache).size !== iterations) {
   fail('Random numbers should be unique')
 }
 

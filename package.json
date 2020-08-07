@@ -10,7 +10,6 @@
   "repository": "github:michaelrhodes/math-random",
   "license": "CC0-1.0",
   "devDependencies": {
-    "array-unique": "~0.2.1",
     "dexy": "github:michaelrhodes/dexy#1.0.4"
   },
   "scripts": {
