@@ -1,0 +1,5 @@
+*
+!browser/*
+!is-secure.js
+!crypto.js
+!node.js
